@@ -19,55 +19,35 @@
     <!-- Aplicação principal React -->
     <div id="root"></div>
 
-    <!-- Botões de navegação -->
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        margin: 40px auto;
-        flex-wrap: wrap;
-      "
-    >
-      <a
-        href="/promocoes.html"
-        style="
-          background: #2563eb;
-          color: white;
-          border-radius: 8px;
-          padding: 10px 20px;
-          text-decoration: none;
-          font-weight: bold;
-          transition: background-color 0.3s;
-        "
-      >
-        Promoções
-      </a>
-      <a
-        href="/index.html"
-        style="
-          background: #2563eb;
-          color: white;
-          border-radius: 8px;
-          padding: 10px 20px;
-          text-decoration: none;
-          font-weight: bold;
-          transition: background-color 0.3s;
-        "
-      >
-        Voltar ao Início
-      </a>
-    </div>
-
-    <!-- ✅ Script de API adicionado -->
+    <!-- ✅ Script de API -->
     <script src="/assets/api.js"></script>
-  
 
+    <!-- ✅ Barra de navegação final (corrigida e centralizada) -->
+    <style>
+      .nav-btn {
+        background: #2563eb;
+        color: white;
+        border-radius: 8px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin: 6px;
+        display: inline-block;
+      }
+      .nav-btn:hover {
+        background: #1d4ed8;
+      }
+      .nav-container {
+        text-align: center;
+        margin: 50px 0 30px 0;
+      }
+    </style>
 
-<style>
-.nav-btn { background: #2563eb; color: white; border-radius: 8px; padding: 10px 20px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; margin: 6px; display: inline-block; }
-.nav-btn:hover { background: #1d4ed8; }
-</style>
-<div style="text-align:center;margin:30px;"><a href="/promocoes" class="nav-btn">Promoções</a><a href="/" class="nav-btn">Voltar ao Início</a><a href="/fluentmethod" class="nav-btn">Fluent Method</a></div>
-</body>
+    <div class="nav-container">
+      <a href="/promocoes" class="nav-btn">Promoções</a>
+      <a href="/" class="nav-btn">Voltar ao Início</a>
+      <a href="/fluentmethod" class="nav-btn">Fluent Method</a>
+    </div>
+  </body>
 </html>
