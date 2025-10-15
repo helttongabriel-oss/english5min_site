@@ -1,1 +1,1 @@
-web: gunicorn english5min_backend.src.app:app
+web: gunicorn src.app:app
