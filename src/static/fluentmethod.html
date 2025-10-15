@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluent Method - English5Min</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-clock text-4xl animate-spin-slow"></i>
+                    <div>
+                        <h1 class="text-3xl font-bold">English5Min</h1>
+                        <p class="text-sm opacity-90">Aprenda Inglês em 5 Minutos</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-yellow-300 transition">Início</a>
+                    <a href="cursos.html" class="hover:text-yellow-300 transition">Cursos</a>
+                    <a href="/promocoes" class="hover:text-yellow-300 transition">Promoções</a>
+                    <a href="/fluentmethod" class="hover:text-yellow-300 transition font-bold">Fluent Method</a>
+                    <a href="contato.html" class="hover:text-yellow-300 transition">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 text-center">
+        <h2 class="text-5xl font-bold mb-4">🎯 Fluent Method</h2>
+        <p class="text-xl opacity-90 mb-8">Domine o inglês com fluidez — aprenda com nossa metodologia prática e comprovada!</p>
+        <a href="#conteudo" class="bg-white text-indigo-700 font-semibold px-8 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition">Explorar Agora</a>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <section id="conteudo" class="container mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">O que é o Fluent Method?</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-xl p-6 card-hover text-center">
+                <i class="fa-solid fa-video text-indigo-500 text-5xl mb-4"></i>
+                <h4 class="text-xl font-semibold mb-2">Aulas em Vídeo</h4>
+                <p class="text-gray-600">Aprenda com lições rápidas e dinâmicas, focadas em conversação real.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-6 card-hover text-center">
+                <i class="fa-solid fa-users text-indigo-500 text-5xl mb-4"></i>
+                <h4 class="text-xl font-semibold mb-2">Experiência Imersiva</h4>
+                <p class="text-gray-600">Interaja com exemplos práticos e simulações de diálogos autênticos.</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-6 card-hover text-center">
+                <i class="fa-solid fa-star text-indigo-500 text-5xl mb-4"></i>
+                <h4 class="text-xl font-semibold mb-2">Resultados Rápidos</h4>
+                <p class="text-gray-600">Veja progresso real em poucas semanas, mesmo estudando poucos minutos por dia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeo Principal -->
+    <section class="bg-gray-100 py-16 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-8">Conheça a Metodologia Fluent Method</h3>
+        <div class="max-w-4xl mx-auto">
+            <iframe class="w-full h-96 rounded-2xl shadow-xl"
+                    src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+                    title="Apresentação Fluent Method"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Carrossel de Depoimentos -->
+    <section class="gradient-bg text-white py-20">
+        <h3 class="text-3xl font-bold text-center mb-12">Depoimentos dos Alunos</h3>
+        <div class="relative max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-xl">
+            <div id="carousel" class="flex transition-transform duration-700">
+                <div class="min-w-full p-8 text-center">
+                    <iframe class="w-full h-80 rounded-xl video-slide"
+                            src="https://www.youtube.com/embed/VIDEO1"
+                            title="Depoimento 1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="min-w-full p-8 text-center">
+                    <iframe class="w-full h-80 rounded-xl video-slide"
+                            src="https://www.youtube.com/embed/VIDEO2"
+                            title="Depoimento 2" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="min-w-full p-8 text-center">
+                    <iframe class="w-full h-80 rounded-xl video-slide"
+                            src="https://www.youtube.com/embed/VIDEO3"
+                            title="Depoimento 3" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const slides = document.querySelectorAll('.video-slide');
+        let index = 0;
+        let paused = false;
+
+        function nextSlide() {
+            if (!paused) {
+                index = (index + 1) % slides.length;
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+            }
+        }
+
+        let autoSlide = setInterval(nextSlide, 5000);
+
+        slides.forEach(slide => {
+            slide.addEventListener('mouseenter', () => {
+                paused = true;
+            });
+            slide.addEventListener('mouseleave', () => {
+                paused = false;
+            });
+        });
+
+        // Pausar quando o vídeo for clicado (para assistir)
+        window.addEventListener('message', function(event) {
+            const data = JSON.parse(event.data);
+            if (data.event === 'infoDelivery' && data.info && data.info.playerState === 1) {
+                paused = true; // Pausa quando o player está tocando
+            }
+            if (data.event === 'infoDelivery' && data.info && data.info.playerState === 0) {
+                paused = false; // Retoma quando o vídeo termina
+            }
+        });
+    </script>
+
+    <!-- Rodapé -->
+    <footer class="gradient-bg text-white text-center py-8">
+        <p class="opacity-80">&copy; 2025 English5Min - Todos os direitos reservados.</p>
+        <a href="/" class="text-yellow-300 hover:underline mt-2 block">⬅ Voltar para a Página Principal</a>
+    </footer>
+
+
+
+
+<style>
+.nav-btn { background: #2563eb; color: white; border-radius: 8px; padding: 10px 20px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; margin: 6px; display: inline-block; }
+.nav-btn:hover { background: #1d4ed8; }
+</style>
+<div style="text-align:center;margin:30px;"><a href="/" class="nav-btn">Voltar ao Início</a><a href="/promocoes" class="nav-btn">Promoções</a></div>
+</body>
+</html>
